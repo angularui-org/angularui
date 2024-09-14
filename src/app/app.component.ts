@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AlertDescriptionDirective, AlertDirective, AlertTitleDirective, ButtonDirective } from '@angularui/components';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ButtonDirective, AlertDirective, AlertTitleDirective, AlertDescriptionDirective],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterOutlet, HeaderComponent],
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'angularui';
 }
