@@ -1,10 +1,11 @@
-<header class="sticky top-0 z-50 w-full border-border/40 border-b-2 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-    <div class="container flex h-14 max-w-screen-2xl items-center">
+<header class="sticky top-0 z-50 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div class="md:container mx-3 flex h-14 max-w-screen-2xl items-center justify-between">
         <!-- <MainNav />
       <MobileNav /> -->
       <!-- <div>UI</div> -->
-       <img src="/angularui-logo.svg" class="h-10" alt="Angular UI">
-        <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+       <img src="/angularui-logo.svg" class="h-10 hidden md:block" alt="Angular UI">
+       <img src="/angularui-icon.svg" class="h-10 md:hidden" alt="Angular UI">
+        <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end ml-5">
             <div class="w-full flex-1 md:w-auto md:flex-none">
                 <!-- <CommandMenu /> -->
                  <app-command-menu></app-command-menu>

@@ -147,6 +147,18 @@
             ]
           }
         }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+        "style": "none",
+        "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        }
       }
     }
   }

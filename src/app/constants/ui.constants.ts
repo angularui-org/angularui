@@ -1,0 +1,32 @@
+export const SIDENAV_ITEMS = [
+    {
+      title: 'Getting Started',
+      links: [
+        { title: 'Introduction', routerLink: '/docs/introduction', isSoon: false },
+        { title: 'Installation', routerLink: '/docs/installation', isSoon: false },
+      ],
+    },
+    {
+      title: 'Components',
+      links: [
+        { title: 'Alert', routerLink: '/docs/alert', isSoon: false },
+        // { title: 'Alert Dialog', routerLink: '/docs/alert-dialog', isSoon: false },
+        { title: 'Avatar', routerLink: '/docs/avatar', isSoon: false },
+        { title: 'Badge', routerLink: '/docs/badge', isSoon: false },
+        { title: 'Breadcrumb', routerLink: '/docs/breadcrumb', isSoon: true },
+        { title: 'Button', routerLink: '/docs/button', isSoon: false },
+        { title: 'Card', routerLink: '/docs/card', isSoon: false },
+        { title: 'Dialog', routerLink: '/docs/dialog', isSoon: false },
+        { title: 'Input', routerLink: '/docs/input', isSoon: false },
+        { title: 'Label', routerLink: '/docs/label', isSoon: false },
+        { title: 'Progress', routerLink: '/docs/progress', isSoon: true },
+        { title: 'Select', routerLink: '/docs/select', isSoon: true },
+        { title: 'Skeleton', routerLink: '/docs/skeleton', isSoon: false },
+        { title: 'Spinner', routerLink: '/docs/spinner', isSoon: false },
+        { title: 'Switch', routerLink: '/docs/switch', isSoon: false },
+        { title: 'Table', routerLink: '/docs/table', isSoon: true },
+        { title: 'Textarea', routerLink: '/docs/textarea', isSoon: false },
+        { title: 'Tooltip', routerLink: '/docs/tooltip', isSoon: true },
+      ],
+    },
+  ]

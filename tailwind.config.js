@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
@@ -8,7 +9,7 @@ module.exports = {
   ],
   safelist: [
     {
-      pattern: /bg-(red|green|blue|orange)-(100|500|700)/, // You can display all the colors that you need
+      pattern: /bg-(red|green|blue|orange|emerald)-(100|500|700)/, // You can display all the colors that you need
     },
   ],
   theme: {
@@ -21,59 +22,27 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
+        transparent: 'transparent',
+        current: 'currentColor',
+        black: colors.black,
+        white: colors.white,
+        'primary': { ...colors.indigo, DEFAULT: colors.indigo['700'] },
+        'primary-foreground': colors.white,
+        'secondary': { ...colors.indigo, DEFAULT: colors.indigo['900'] },
+        'secondary-foreground': colors.white,
+        'success': { ...colors.green, DEFAULT: colors.green['700'] },
+        'success-foreground': colors.white,
+        'warning': { ...colors.yellow, DEFAULT: colors.yellow['700'] },
+        'warning-foreground': colors.white,
+        'danger': { ...colors.red, DEFAULT: colors.red['700'] },
+        'danger-foreground': colors.white
+      }
+      // backgroundColor: {
+      //   primary: {...colors.slate, DEFAULT: colors.slate['700']}
+      // },
+      // textColor: {
+      //   'primary': colors.white
+      // }
     },
   },
   plugins: [],
